@@ -1,0 +1,192 @@
+body {
+  background-color: #f4eee2;
+}
+.navbar {
+  opacity: 0.9;
+}
+// index - HOME SECTION
+#home-section {
+  background: url(../img/jumbo-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 750px;
+}
+#home-section .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 750px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#home-section .home-inner {
+  padding-top: 170px;
+}
+
+// index - ABOUT SECTION
+
+#about-head-section {
+  padding: 3rem 0 4rem 0;
+  background: url(../img/bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: initial;
+}
+.about-head-bg {
+  min-height: 300px;
+  margin-top: 2rem;
+  background: url(../img/about-me.jpg);
+  opacity: 0.9;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.about ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+.about ul li {
+  color: #ff6138;
+}
+.about ul li:hover {
+  text-decoration: none;
+}
+.popover-btn {
+  cursor: pointer;
+}
+.img-block-item a {
+  transition-duration: 0.5s;
+}
+.img-block-item a:hover {
+  opacity: 0.6;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+.wrapper-container {
+  margin-top: 1rem;
+  padding: 0;
+}
+.wrapper .about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5rem;
+  margin-right: 1rem;
+  background-color: #fff;
+  font-size: 1.2rem;
+  color: #ff6138;
+  border-radius: 0px 25px 0px 50px;
+}
+
+.wrapper img {
+  width: 100%;
+}
+.img-blocks {
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+// index - VIDEO SECTION
+
+#vids-head-section {
+  padding-bottom: 4rem;
+  position: relative;
+  background-color: #222933;
+  background: url(../img/vids-bg.jpg);
+  opacity: 0.9;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+  color: #f4eee2;
+}
+#vids-head-section .red-overlay {
+  padding-top: 3rem;
+  position: absolute;
+  min-height: 700px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(206, 22, 22, 0.9);
+}
+#vids-head-section img {
+  width: 100%;
+}
+.carousel-item iframe {
+  box-shadow: 2px 5px 15px 5px #250303;
+}
+
+// index - PRICING SECTION
+.pricing-header {
+  min-height: 300px;
+  position: relative;
+  background: url(../img/jumbo-img.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pricing-header .dark-overlay {
+  padding-top: 100px;
+  position: absolute;
+  min-height: 300px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(179, 179, 179, 0.2);
+}
+
+// index - FOOTER SECTION
+#main-footer {
+  padding: 1.3rem 0;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: rgb(78, 78, 78);
+}
+.footer-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 991px) {
+  .wrapper {
+    grid-template-columns: 100%;
+  }
+  .wrapper .about {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about-head-section {
+    padding: 2rem 1rem;
+  }
+  #vids-head-section {
+    padding: 2rem 1rem;
+  }
+
+  .wrapper {
+    grid-template-columns: 100%;
+  }
+  .wrapper .about {
+    display: none;
+  }
+  .carousel-inner iframe {
+    width: 80%;
+    height: auto;
+  }
+}
